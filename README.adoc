@@ -4,6 +4,8 @@
 :nofooter:
 :docinfo1:
 
+image:https://img.shields.io/github/stars/LimberDuck/nessus-cheat-sheet?label=Stars%20from%20users&style=social[GitHub Repo stars,link="https://github.com/LimberDuck/nessus-cheat-sheet"] - give a Star on GitHub if you like it.
+
 image:https://raw.githubusercontent.com/limberduck/nessus-cheat-sheet/gh-pages/nessus-cheat-sheet-10p.png[Nessus Cheat Sheet thumbnail, 350, 240, role="thumb",link="https://limberduck.github.io/nessus-cheat-sheet/nessus-cheat-sheet.pdf",window="_blank"]
 
 https://limberduck.github.io/nessus-cheat-sheet/nessus-cheat-sheet.html[HTML,window="_blank"] 
