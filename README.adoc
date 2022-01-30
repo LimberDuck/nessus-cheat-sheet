@@ -10,7 +10,7 @@ https://limberduck.github.io/nessus-cheat-sheet/nessus-cheat-sheet.html[HTML,win
 |
 https://limberduck.github.io/nessus-cheat-sheet/nessus-cheat-sheet.pdf[PDF,window="_blank"]
 |
-https://raw.githubusercontent.com/limberduck/nessus-cheat-sheet/gh-pages/nessus-cheat-sheet.pngA[PNG,window="_blank"]
+https://raw.githubusercontent.com/LimberDuck/nessus-cheat-sheet/gh-pages/nessus-cheat-sheet.png[PNG,window="_blank"]
 
 == License
 
