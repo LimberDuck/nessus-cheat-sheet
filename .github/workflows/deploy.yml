@@ -1,0 +1,44 @@
+name: Build and Deploy
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+env:
+  source_file_name: nessus-cheat-sheet
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install
+        run: |
+          sudo gem install asciidoctor
+          sudo npm install -g @asciidoctor/core asciidoctor-pdf
+          sudo apt-get install -y zip unzip
+          sudo apt-get install -y imagemagick ghostscript
+
+      - name: Build Cheat Sheet PDF
+        run: |
+          asciidoctor-web-pdf ${{ env.source_file_name }}.adoc -D build --template-require ./limberduck/template.js
+          cp ${{ env.source_file_name }}.html build
+          cp -R limberduck build
+
+      - name: Set ImageMagick
+        run: sudo sed -i_bak 's/rights="none" pattern="PDF"/rights="read | write" pattern="PDF"/' /etc/ImageMagick-6/policy.xml
+
+      - name: PDF first page to PNG
+        run: |
+          convert -density 300 build/${{ env.source_file_name }}.pdf[0] -resize 50% build/${{ env.source_file_name }}.png
+          convert -density 300 build/${{ env.source_file_name }}.pdf[0] -resize 10% build/${{ env.source_file_name }}-10p.png
+      
+      - name: README to HTML
+        run: asciidoctor README.adoc -o index.html -D build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.2.0
+        with:
+          branch: gh-pages
+          folder: build
