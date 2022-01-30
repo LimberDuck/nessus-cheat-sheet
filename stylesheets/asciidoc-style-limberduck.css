@@ -1,0 +1,65 @@
+@import "https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css";
+/*@import url("asciidoctor-default.css");*/
+/*https://docs.asciidoctor.org/asciidoctor/latest/html-backend/default-stylesheet/*/
+
+
+:root {
+    /*LimberDuck colours*/
+    --LimberDuckColor: #FF6200;
+
+    /*LimberDuck Fonts*/
+    --LimberDuckFont: Arial, sans-serif;
+}
+
+*{
+    font-family: var(--LimberDuckFont);
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--LimberDuckColor);
+    font-family: var(--LimberDuckFont);
+    /* background-color: green; */
+}
+
+table {
+    width: 90%;
+    border: none;
+    caption-side: bottom;
+}
+
+div.tableblock > table, th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+div.tableblock > table {
+    background: #ffffff;
+    /*position: -webkit-sticky;*/
+    /*position: sticky;*/
+    /*top: 0; !* Don't forget this, required for the stickiness *!*/
+    /*box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);*/
+}
+
+div.tableblock > table, th {
+    background: #f4f4f4;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; /* Don't forget this, required for the stickiness */
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+
+div.admonitionblock > table, th, td {
+     border: none;
+}
+
+div.tableblock > table {
+    border: 2px solid #527bbd;
+
+}
+
+tr:hover {background-color:#f5f5f5;}
+
+
