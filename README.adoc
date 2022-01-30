@@ -1,0 +1,19 @@
+= Nessus Cheat Sheet
+:stylesdir: stylesheets
+:stylesheet: asciidoc-style-limberduck.css
+:nofooter:
+:docinfo1:
+
+image:https://raw.githubusercontent.com/limberduck/nessus-cheat-sheet/gh-pages/nessus-cheat-sheet-10p.png[Nessus Cheat Sheet thumbnail, 390, 240, role="thumb",link="https://limberduck.github.io/nessus-cheat-sheet/nessus-cheat-sheet.pdf",window="_blank"]
+
+https://limberduck.github.io/nessus-cheat-sheet/nessus-cheat-sheet.html[HTML,window="_blank"] 
+|
+https://limberduck.github.io/nessus-cheat-sheet/nessus-cheat-sheet.pdf[PDF,window="_blank"]
+|
+https://raw.githubusercontent.com/limberduck/nessus-cheat-sheet/gh-pages/nessus-cheat-sheet.pngA[PNG,window="_blank"]
+
+== License
+
+image:https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png[Creative Commons Attribution (CC BY 4.0) license, 88, 31, link="https://creativecommons.org/licenses/by/4.0/deed.en",window="_blank"]
+
+This cheat sheet is licensed under a https://creativecommons.org/licenses/by/4.0/deed.en[Creative Commons Attribution (CC BY 4.0) license].
