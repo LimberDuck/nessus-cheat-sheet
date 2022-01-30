@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Cheet Sheet">
+<meta name="author" content="Damian Krawczyk">
+<title>Nessus Cheat Sheet</title>
+<link href="./limberduck/assets/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+<h1>Nessus Cheat Sheet</h1>
+</br>
+  <img class="logo" src="./limberduck/assets/logo.svg"/>
+</header>
+<section class="content">
+<div class="sect1">
+<h2 id="_data_directories"><a class="anchor" href="#_data_directories"></a>Data directories</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-hover stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Linux</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>/opt/nessus/var/nessus</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">macOS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>/Library/Nessus/run/var/nessus</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Windows</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>C:\ProgramData\Tenable\Nessus\nessus</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_binary_directories_and_utilities"><a class="anchor" href="#_binary_directories_and_utilities"></a>Binary directories and utilities</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-hover stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Linux</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>/opt/nessus/sbin</code><br>
+<code>/opt/nessus/bin</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">macOS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>/Library/Nessus/run/sbin</code><br>
+<code>/Library/Nessus/run/bin</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Windows</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>C:\Program Files\Tenable\Nessus</code><br>
+<code>C:\Program Files (x86)\Tenable\Nessus</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p><code>nessusd</code> - e.g. to recompile plugins</p>
+</li>
+<li>
+<p><code>nessuscli</code> - e.g. to configure, manage and update Nessus <a href="https://docs.tenable.com/nessus/Content/NessusCLI.htm">(docs)</a></p>
+</li>
+<li>
+<p><code>nasl</code> - e.g. to test, run, sign plugins</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_logs_directories_and_files"><a class="anchor" href="#_logs_directories_and_files"></a>Logs directories and files</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-hover stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Linux</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>/opt/nessus/var/nessus/logs</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">macOS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>/Library/Nessus/run/var/nessus/logs</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Windows</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>C:\ProgramData\Tenable\Nessus\nessus\logs</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p><code>nessusd.dump</code> — Nessus dump log file used for debugging output.<br></p>
+</li>
+<li>
+<p><code>nessusd.messages</code> — Nessus scanner log.<br></p>
+</li>
+<li>
+<p><code>www_server.log</code> — Nessus web server log.<br></p>
+</li>
+<li>
+<p><code>backend.log</code> — Nessus backend log.<br></p>
+</li>
+<li>
+<p><code>nessuscli.log</code> — Nessus CLI log.<br></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_plugin_directories_and_files"><a class="anchor" href="#_plugin_directories_and_files"></a>Plugin directories and files</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-hover stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Linux</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>/opt/nessus/lib/nessus/plugins</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">macOS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>/Library/Nessus/run/lib/nessus/plugins</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Windows</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>C:\ProgramData\Tenable\Nessus\nessus\plugins</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p><code>*.nasl</code> - plugins with readable source code</p>
+</li>
+<li>
+<p><code>*.nbin</code> - compiled plugins</p>
+</li>
+<li>
+<p><code>*.inc</code> - include libraries</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_search_in_plugin_content"><a class="anchor" href="#_search_in_plugin_content"></a>Search in plugin content</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">cd /opt/nessus/lib/nessus/plugins
+grep -rl script_id.19506 . <i class="conum" data-value="1"></i><b>(1)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Due to big number of plugins you need to use <code>-r</code> parameter to
+recursively search in plugins directory (i.e., force grep to behave as rgrep).</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_advanced_settings"><a class="anchor" href="#_advanced_settings"></a>Advanced Settings</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">cd /opt/nessus/sbin
+nessuscli fix --list
+nessuscli fix --get setting_name
+nessuscli fix --set setting_name=&lt;value&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_api"><a class="anchor" href="#_api"></a>API</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>https://localhost:8834/api <i class="conum" data-value="1"></i><b>(1)</b>
+https://localhost:8834/server/status <i class="conum" data-value="2"></i><b>(2)</b>
+https://localhost:8834/server/properties <i class="conum" data-value="3"></i><b>(3)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Access Nessus API documentation.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Check Nessus service status.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Check Nessus service version.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_good_practices"><a class="anchor" href="#_good_practices"></a>Good practices</h2>
+<div class="sectionbody">
+<p class="">When you run scan:</p>
+<div class="ulist checklist do">
+<ul class="checklist">
+<li>
+<p><input type="checkbox" data-item-complete="1" checked> Make sure that you have latest feed.</p>
+</li>
+<li>
+<p><input type="checkbox" data-item-complete="1" checked> Perform scan with credentials. <a href="https://docs.tenable.com/nessus/Content/NessusCredentialedChecks.htm">(docs)</a></p>
+</li>
+</ul>
+</div>
+<p class="">When you analyze scan results:</p>
+<div class="ulist checklist do">
+<ul class="checklist">
+<li>
+<p><input type="checkbox" data-item-complete="1" checked> Use Audit Trail to make sure why plugin did not provide result.</p>
+</li>
+<li>
+<p><input type="checkbox" data-item-complete="1" checked> Check Knowledge Base to find more details.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_additional_resources"><a class="anchor" href="#_additional_resources"></a>Additional resources</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.tenable.com/Nessus.htm">docs.tenable.com/Nessus.htm</a> - Nessus documentation</p>
+</li>
+<li>
+<p><a href="https://www.tenable.com/plugins/search">tenable.com/plugins/search</a> - Nessus Plugins Search</p>
+</li>
+<li>
+<p><a href="https://community.tenable.com">community.tenable.com</a> - Tenable Community</p>
+</li>
+<li>
+<p><a href="https://github.com/tenable">github.com/tenable</a> - Tenable profile at GitHub</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1 footer">
+<hr color="gray" size="0.5" width="100%">
+<a class="website" href="https://limberduck.github.io/nessus-cheat-sheet">limberduck.github.io/nessus-cheat-sheet</a> v0.0.1 
+</br>
+Generated on 2022-01-30 16:52:15 UTC by <a class="website" href="https://limberduck.org">limberduck.org</a> 
+<span class="icon"><i class="fab fa-creative-commons"></i></span> 
+<span class="icon"><i class="fab fa-creative-commons-by"></i></span>
+<td class="content">
+<p class="">
+<span class="icon"><i class="fab fa-windows"></i></span> / <span class="icon"><i class="fab fa-linux"></i></span> 
+zoom in <span class="keyseq"><kbd>ctrl</kbd>+<kbd>+</kbd></span> 
+zoom out <span class="keyseq"><kbd>ctrl</kbd>+<kbd>-</kbd></span>
+actual size <span class="keyseq"><kbd>ctrl</kbd>+<kbd>0</kbd></span>
+</p>
+<p class="">
+<span class="icon"><i class="fab fa-apple"></i></span> 
+zoom in <span class="keyseq"><kbd>⌘ cmd</kbd>+<kbd>+</kbd></span> 
+zoom out <span class="keyseq"><kbd>⌘ cmd</kbd>+<kbd>-</kbd></span>
+actual size <span class="keyseq"><kbd>⌘ cmd</kbd>+<kbd>0</kbd></span>
+</p>
+</td>
+</div>
+</section>
+</body>
