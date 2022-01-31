@@ -21,3 +21,11 @@ https://github.com/LimberDuck/nessus-cheat-sheet/blob/main/nessus-cheat-sheet.ad
 image:https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png[Creative Commons Attribution (CC BY 4.0) license, 88, 31, link="https://creativecommons.org/licenses/by/4.0/deed.en",window="_blank"]
 
 This cheat sheet is licensed under a https://creativecommons.org/licenses/by/4.0/deed.en[Creative Commons Attribution (CC BY 4.0) license].
+
+== Changelog
+
+See changes in https://github.com/LimberDuck/nessus-cheat-sheet/blob/master/CHANGELOG.md[CHANGELOG.md] at GitHub.
+
+== Contribute
+
+Use https://github.com/LimberDuck/nessus-cheat-sheet/issues[issues] at GitHub to report errors or ideas for new entries.

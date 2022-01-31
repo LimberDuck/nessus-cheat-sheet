@@ -3,7 +3,7 @@ Damian Krawczyk <https://limberduck.org>
 :description: Cheet Sheet
 :imagesdir: limberduck/assets
 :toc: left
-:revnumber:     0.0.1
+:revnumber:     0.0.2
 :revremark:     Initial
 :revdate:       {localdatetime}
 :stylesdir: stylesheets
@@ -123,6 +123,26 @@ https://localhost:8834/server/properties <3>
 <2> Check Nessus service status.
 <3> Check Nessus service version.
 
+== Plugin Feed
+
+=== Check latest available plugins feed 
+
+```terminal
+curl https://plugins.nessus.org/v2/plugins.php 
+202201311213
+```
+
+=== Check Plugin Feed in Nessus
+
+Login to Nessus, go to Settings > About > check Plugin Set, 
+or on OS level:
+
+```terminal
+cd /opt/nessus/lib/nessus/plugins
+head -1 plugin_feed_info.inc
+PLUGIN_SET = "202201311213";
+```
+
 == Good practices
 
 When you run scan:
@@ -140,7 +160,7 @@ When you analyze scan results:
 == Additional resources
 
 - https://docs.tenable.com/Nessus.htm[docs.tenable.com/Nessus.htm] - Nessus documentation
+- https://www.tenable.com/downloads/nessus[tenable.com/downloads/nessus] - Nessus download page
 - https://www.tenable.com/plugins/search[tenable.com/plugins/search] - Nessus Plugins Search
 - https://community.tenable.com[community.tenable.com] - Tenable Community
 - https://github.com/tenable[github.com/tenable] - Tenable profile at GitHub
-
