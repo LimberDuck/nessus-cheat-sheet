@@ -225,6 +225,32 @@ https://localhost:8834/server/properties <i class="conum" data-value="3"></i><b>
 </div>
 </div>
 <div class="sect1">
+<h2 id="_plugin_feed"><a class="anchor" href="#_plugin_feed"></a>Plugin Feed</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_check_latest_available_plugins_feed"><a class="anchor" href="#_check_latest_available_plugins_feed"></a>Check latest available plugins feed</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">curl https://plugins.nessus.org/v2/plugins.php
+202201311213</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_check_plugin_feed_in_nessus"><a class="anchor" href="#_check_plugin_feed_in_nessus"></a>Check Plugin Feed in Nessus</h3>
+<p class="">Login to Nessus, go to Settings &gt; About &gt; check Plugin Set,
+or on OS level:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">cd /opt/nessus/lib/nessus/plugins
+head -1 plugin_feed_info.inc
+PLUGIN_SET = "202201311213";</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_good_practices"><a class="anchor" href="#_good_practices"></a>Good practices</h2>
 <div class="sectionbody">
 <p class="">When you run scan:</p>
@@ -260,6 +286,9 @@ https://localhost:8834/server/properties <i class="conum" data-value="3"></i><b>
 <p><a href="https://docs.tenable.com/Nessus.htm">docs.tenable.com/Nessus.htm</a> - Nessus documentation</p>
 </li>
 <li>
+<p><a href="https://www.tenable.com/downloads/nessus">tenable.com/downloads/nessus</a> - Nessus download page</p>
+</li>
+<li>
 <p><a href="https://www.tenable.com/plugins/search">tenable.com/plugins/search</a> - Nessus Plugins Search</p>
 </li>
 <li>
@@ -274,9 +303,9 @@ https://localhost:8834/server/properties <i class="conum" data-value="3"></i><b>
 </div>
 <div class="sect1 footer">
 <hr color="gray" size="0.5" width="100%">
-<a class="website" href="https://limberduck.github.io/nessus-cheat-sheet">limberduck.github.io/nessus-cheat-sheet</a> v0.0.1 
+<a class="website" href="https://limberduck.github.io/nessus-cheat-sheet">limberduck.github.io/nessus-cheat-sheet</a> v0.0.2 
 </br>
-Generated on 2022-01-30 18:00:01 UTC by <a class="website" href="https://limberduck.org">limberduck.org</a> 
+Generated on 2022-01-31 17:18:25 UTC by <a class="website" href="https://limberduck.org">limberduck.org</a> 
 <span class="icon"><i class="fab fa-creative-commons"></i></span> 
 <span class="icon"><i class="fab fa-creative-commons-by"></i></span>
 <td class="content">
