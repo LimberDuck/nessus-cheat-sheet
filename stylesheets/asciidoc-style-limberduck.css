@@ -62,4 +62,10 @@ div.tableblock > table {
 
 tr:hover {background-color:#f5f5f5;}
 
-
+div.profile-pic img {
+  border-radius: 500px;
+  width: 100%;
+  max-width: 18px;
+  margin: 0 auto;
+  display: block;
+}
