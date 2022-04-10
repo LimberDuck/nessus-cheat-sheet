@@ -16,16 +16,28 @@ https://raw.githubusercontent.com/LimberDuck/nessus-cheat-sheet/gh-pages/nessus-
 |
 https://github.com/LimberDuck/nessus-cheat-sheet/blob/main/nessus-cheat-sheet.adoc[ADOC,window="_blank"]
 
-== License
+=== License
 
 image:https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png[Creative Commons Attribution (CC BY 4.0) license, 88, 31, link="https://creativecommons.org/licenses/by/4.0/deed.en",window="_blank"]
 
 This cheat sheet is licensed under a https://creativecommons.org/licenses/by/4.0/deed.en[Creative Commons Attribution (CC BY 4.0) license].
 
-== Changelog
+=== Changelog
 
 See changes in https://github.com/LimberDuck/nessus-cheat-sheet/blob/master/CHANGELOG.md[CHANGELOG.md] at GitHub.
 
-== Contribute
+=== Contribute
 
 Use https://github.com/LimberDuck/nessus-cheat-sheet/issues[issues] at GitHub to report errors or ideas for new entries.
+
+=== Authors
+
+[.profile-pic]
+image:https://avatars.githubusercontent.com/u/9287709?v=4[title="Damian Krawczyk",alt="Damian Krawczyk",18,link=http://github.com/damian-krawczyk]
+http://github.com/damian-krawczyk[damian-krawczyk]
+
+=== Contributors
+
+[.profile-pic]
+image:https://avatars.githubusercontent.com/u/87418191?v=4[title="Pi0J",alt="Pi0J",18,link=https://github.com/Pi0J]
+https://github.com/Pi0J[Pi0J]
